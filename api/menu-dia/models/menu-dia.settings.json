@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_dias",
+  "info": {
+    "name": "Menu-dia",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Costo": {
+      "type": "integer"
+    }
+  }
+}

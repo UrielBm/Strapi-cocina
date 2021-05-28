@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platillos",
+  "info": {
+    "name": "Platillos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "integer",
+      "required": true
+    },
+    "todos_los_dias": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Fotografia": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "guarnicion": {
+      "type": "enumeration",
+      "enum": [
+        "ninguno",
+        "variado",
+        "papas",
+        "chilaquiles",
+        "enchiladas",
+        "nopales",
+        "ensalada_verde",
+        "ensalada_de_frutas",
+        "ensalada_rusa",
+        "ensalada_especial"
+      ],
+      "default": "ninguno",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "categoria": {
+      "model": "categorias"
+    }
+  }
+}

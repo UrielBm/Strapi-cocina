@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sopas_dias",
+  "info": {
+    "name": "Sopas-día",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sopaAguada": {
+      "type": "enumeration",
+      "enum": [
+        "consome_de_pollo",
+        "sopa_azteca",
+        "sopa_de_lima",
+        "sopa_tarasca",
+        "sopa_de_fideo",
+        "lentejas"
+      ]
+    },
+    "SopaAguada2": {
+      "type": "enumeration",
+      "enum": [
+        "consome_de_pollo",
+        "sopa_azteca",
+        "sopa_de_lima",
+        "sopa_tarasca",
+        "sopa_de_fideo",
+        "lentejas"
+      ]
+    },
+    "Sopaseca1": {
+      "type": "enumeration",
+      "enum": [
+        "Arroz_rojo",
+        "Arroz_verde",
+        "Arroz_amarillo",
+        "Sopa_de_pasta"
+      ]
+    },
+    "Sopaseca2": {
+      "type": "enumeration",
+      "enum": [
+        "spaguetti_rojo",
+        "spaguetti_verde",
+        "spaguetti_naranja",
+        "sopa_de_pasta"
+      ]
+    }
+  }
+}

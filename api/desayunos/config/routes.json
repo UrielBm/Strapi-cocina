@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/desayunos",
+      "handler": "desayunos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/desayunos/count",
+      "handler": "desayunos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/desayunos/:id",
+      "handler": "desayunos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/desayunos",
+      "handler": "desayunos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/desayunos/:id",
+      "handler": "desayunos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/desayunos/:id",
+      "handler": "desayunos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

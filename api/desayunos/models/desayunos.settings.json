@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "desayunos",
+  "info": {
+    "name": "Desayunos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "precio": {
+      "required": true,
+      "type": "integer"
+    },
+    "fotografia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

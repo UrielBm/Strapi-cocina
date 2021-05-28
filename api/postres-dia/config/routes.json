@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postres-dias",
+      "handler": "postres-dia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postres-dias/count",
+      "handler": "postres-dia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postres-dias/:id",
+      "handler": "postres-dia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postres-dias",
+      "handler": "postres-dia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postres-dias/:id",
+      "handler": "postres-dia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postres-dias/:id",
+      "handler": "postres-dia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

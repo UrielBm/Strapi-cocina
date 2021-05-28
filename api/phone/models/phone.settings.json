@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phones",
+  "info": {
+    "name": "phone"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero_tel": {
+      "type": "string"
+    }
+  }
+}

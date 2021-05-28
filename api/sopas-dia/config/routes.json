@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sopas-dias",
+      "handler": "sopas-dia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sopas-dias/count",
+      "handler": "sopas-dia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sopas-dias/:id",
+      "handler": "sopas-dia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sopas-dias",
+      "handler": "sopas-dia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sopas-dias/:id",
+      "handler": "sopas-dia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sopas-dias/:id",
+      "handler": "sopas-dia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

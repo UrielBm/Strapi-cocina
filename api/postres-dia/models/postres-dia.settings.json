@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postres_dias",
+  "info": {
+    "name": "Postres-dia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Costo": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
